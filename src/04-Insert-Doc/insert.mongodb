@@ -1,0 +1,32 @@
+use("instituto")
+
+
+db.createCollection("alumnos")
+db.alumnos.drop()
+
+db.alumnos.insertMany([
+    {
+        _id: 1,
+        nombre: "Juan",
+        apellido: "Pérez",
+        nota: 8.5,
+    },
+    {
+        _id: 2,
+        nombre: "Ana",
+        apellido: "Gómez",
+        nota: 9.0,
+    },
+    {
+        _id: 3,
+        nombre: "Luis",
+        apellido: "Martínez",
+        nota: 7.5,
+    },
+    {
+        _id: 4,
+        nombre: "María",
+        apellido: "López",
+        nota: 8.0,
+    }
+])

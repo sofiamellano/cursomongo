@@ -1,0 +1,9 @@
+use("instituto")
+
+db.productos.updateOne(
+    { _id: 1 }, // Filtro para encontrar el documento a actualizar
+    { $inc: { 
+        precio: 3000,
+        stock: 5 } }
+) 
+db.productos.find()

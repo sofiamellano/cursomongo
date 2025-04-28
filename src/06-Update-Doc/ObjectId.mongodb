@@ -1,0 +1,12 @@
+use("instituto")
+
+db.productos.updateOne(
+    { _id: 1 }, // Filtro para encontrar el documento a actualizar
+    { $set: { 
+        nombre: "Camiseta Termica", 
+        precio: 10000, 
+        talle: "S" } },
+
+        { $unset: { categoria: "" } } 
+) 
+db.productos.find()
